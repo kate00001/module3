@@ -1,4 +1,4 @@
-def send_email(message, recipient, *, sender):
+def send_email(message, recipient, *, sender='university.hel@pgmail.com'):
     endings = ('.com', '.ru', '.net')
     if '@' not in recipient or '@' not in sender:
         print('Невозможно отправить письмо с адреса', sender, 'на адрес', recipient)
@@ -13,4 +13,4 @@ def send_email(message, recipient, *, sender):
             print('Письмо успешно отправлено с адреса', sender, 'на адрес', recipient)
 
 
-send_email('Сообщение', 'kiss_ka00@mail.ru', sender='university.hel@pgmail.com')
+send_email('Сообщение', 'kiss_ka00@mail.ru')
